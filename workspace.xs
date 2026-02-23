@@ -1,4 +1,4 @@
-workspace "Git Sync" {
+workspace new_extension {
   acceptance = {ai_terms: false}
   preferences = {
     internal_docs    : false
@@ -6,6 +6,4 @@ workspace "Git Sync" {
     sql_names        : false
     sql_columns      : true
   }
-
-  realtime = {canonical: "jpjBYc-8rPKTMRjv9hXoib0GGik"}
 }
