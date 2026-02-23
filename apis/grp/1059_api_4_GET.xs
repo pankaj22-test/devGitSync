@@ -5,7 +5,10 @@ query "api/4" verb=GET {
   }
 
   stack {
+    var $x1 {
+      value = $env.$http_headers
+    }
   }
 
-  response = null
+  response = $x1
 }
