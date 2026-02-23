@@ -16,4 +16,12 @@ table user {
     {type: "btree", field: [{name: "created_at", op: "desc"}]}
     {type: "btree|unique", field: [{name: "email", op: "asc"}]}
   ]
+
+  view = {
+    new: {
+      sort: {id: "asc"}
+      hide: ["password"]
+      id  : "cf7e69b6-939d-4a7f-8fa4-b0886e04e8e3"
+    }
+  }
 }
