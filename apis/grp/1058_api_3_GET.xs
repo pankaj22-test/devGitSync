@@ -5,7 +5,8 @@ query "api/3" verb=GET {
   }
 
   stack {
+    function.run user as $func1
   }
 
-  response = null
+  response = $func1
 }
