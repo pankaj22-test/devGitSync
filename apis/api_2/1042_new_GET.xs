@@ -5,8 +5,8 @@ query new verb=GET {
   }
 
   stack {
-    var $x1 {
-      value = `$chunk|map:($$:binary_user_id)`
+    var $x121 {
+      value = `$csdfghunk|map:($$:binary_user_id)`
     }
   }
 
