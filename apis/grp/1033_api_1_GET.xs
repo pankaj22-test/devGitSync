@@ -6,7 +6,12 @@ query "api/1" verb=GET {
 
   stack {
     var $x1 {
-      value = "{\n  \"name\": \"testnew\",\n  \"new1\": \"mewer\"\n}"|json_decode
+      value = """
+        {
+          "name": "testnew",
+          "new1": "mewdfcvxghdfer"
+        }
+        """|json_decode
     }
   }
 
