@@ -5,6 +5,7 @@ function user {
   stack {
     db.query user {
       return = {type: "list"}
+      addon = [{name: "uuid", as: "_uuid"}]
     } as $user1
   }
 
