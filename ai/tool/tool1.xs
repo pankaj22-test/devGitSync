@@ -5,11 +5,11 @@ tool tool1 {
   }
 
   stack {
-    var $x1 {
-      value = "new"
-    }
+    function.run tool1 {
+      input = {name: $input.name}
+    } as $func_1
   }
 
-  response = {x1: $x1}
+  response = $func_1
   tags = ["d"]
 }
