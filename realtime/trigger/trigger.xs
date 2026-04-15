@@ -1,5 +1,5 @@
 realtime_trigger trigger {
-  channel = "22355457082550|new"
+  channel = ""
 
   input {
     enum action {
