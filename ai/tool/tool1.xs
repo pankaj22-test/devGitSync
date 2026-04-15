@@ -1,3 +1,4 @@
+// new descriptio
 tool tool1 {
   input {
     text name? filters=trim
@@ -10,4 +11,5 @@ tool tool1 {
   }
 
   response = {x1: $x1}
+  tags = ["d"]
 }
