@@ -16,5 +16,5 @@ agent greeter_agent {
     dynamic_retrival: ""
   }
 
-  tools = [{name: "greet_user"}]
+  tools = []
 }
