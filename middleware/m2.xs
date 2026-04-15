@@ -1,3 +1,4 @@
+// Specify the settings of this middleware
 middleware M2 {
   input {
     json vars
@@ -15,4 +16,5 @@ middleware M2 {
   response = {x111: $x1}
   response_strategy = "merge"
   exception_policy = "silent"
+  tags = ["test"]
 }
