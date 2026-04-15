@@ -6,4 +6,6 @@ workspace test_w2 {
     sql_names        : false
     sql_columns      : true
   }
+
+  realtime = {canonical: "kidGMc5P3G7oubub1736SX0pz_4"}
 }
