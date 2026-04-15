@@ -1,4 +1,5 @@
-workspace test_w2 {
+// adding description for testing 
+workspace test_w2_RBAC {
   acceptance = {ai_terms: true}
   preferences = {
     internal_docs    : false
