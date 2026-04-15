@@ -1,7 +1,7 @@
 tool tool1 {
   input {
     text name? filters=trim
-    int age?
+    int[] age?
   }
 
   stack {
@@ -10,9 +10,9 @@ tool tool1 {
     }
   
     var $x2 {
-      value = "new1"
+      value = $x1
     }
   }
 
-  response = {x1: $x1, x2: $x2}
+  response = {x1: $x1, x2s: $x2}
 }
