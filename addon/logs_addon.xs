@@ -1,3 +1,4 @@
+// f
 addon logs_addon {
   input {
   }
@@ -7,4 +8,6 @@ addon logs_addon {
       return = {type: "list"}
     }
   }
+
+  tags = ["monitoring"]
 }
