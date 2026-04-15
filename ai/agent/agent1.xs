@@ -15,5 +15,5 @@ agent agent1 {
     dynamic_retrival: ""
   }
 
-  tools = [{name: "tool1"}]
+  tools = []
 }
