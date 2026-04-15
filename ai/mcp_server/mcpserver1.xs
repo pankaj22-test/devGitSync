@@ -1,4 +1,4 @@
 mcp_server mcpserver1 {
   canonical = "ZGTvehJn"
-  tools = []
+  tools = [{name: "tool1"}]
 }
