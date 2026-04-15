@@ -1,4 +1,5 @@
-middleware M2 {
+// new changes
+middleware Middleware2 {
   input {
     json vars
     enum type {
@@ -8,7 +9,7 @@ middleware M2 {
 
   stack {
     var $x1 {
-      value = "1test1df"
+      value = "1test1dff"
     }
   }
 
