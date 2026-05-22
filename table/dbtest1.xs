@@ -17,4 +17,11 @@ table dbtest1 {
   ]
 
   autocomplete = [{name: "txx"}]
+  view = {
+    nw: {
+      search: $db.id != "2"
+      sort  : {id: "asc"}
+      id    : "26773ed5-bb63-4fba-ba71-7e580699fb75"
+    }
+  }
 }
