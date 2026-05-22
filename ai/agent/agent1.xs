@@ -1,5 +1,5 @@
-agent agent1 {
-  canonical = "48sMWLe8"
+agent Agent1 {
+  canonical = "KF31YqbK"
   llm = {
     type            : "xano-free"
     system_prompt   : "You are a helpful AI Agent that completes tasks accurately. When you need additional information to complete a task, use the available tools. Always explain your reasoning and provide clear responses."
@@ -15,5 +15,5 @@ agent agent1 {
     dynamic_retrival: ""
   }
 
-  tools = []
+  tools = [{name: "tool1"}]
 }

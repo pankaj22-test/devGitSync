@@ -1,10 +1,10 @@
-tool tool1 {
+tool tool2 {
   input {
   }
 
   stack {
     var $x1 {
-      value = true
+      value = 423
     }
   }
 
