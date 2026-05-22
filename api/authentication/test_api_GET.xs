@@ -13,4 +13,14 @@ query "test/api" verb=GET {
   }
 
   response = $action1
+
+  test newunit {
+    expect.to_equal ($response.text) {
+      value = "new"
+    }
+  
+    expect.to_equal ($response.text1) {
+      value = "nr"
+    }
+  }
 }
