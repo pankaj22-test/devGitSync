@@ -5,7 +5,12 @@ query "test/api" verb=GET {
   }
 
   stack {
+    action.call "" {
+      package = ""
+      input = {object: {text: "new", text1: "nr"}}
+      registry = {objectt: ""}
+    } as $action1
   }
 
-  response = null
+  response = $action1
 }
