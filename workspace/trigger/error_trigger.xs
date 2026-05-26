@@ -80,5 +80,8 @@ error_trigger "On Error" {
   }
 
   stack {
+    var $x1 {
+      value = "v"
+    }
   }
 }
