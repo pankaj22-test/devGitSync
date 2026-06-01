@@ -22,7 +22,7 @@ query "API/1" verb=GET {
         description      : {hidden: false}
         instructions     : {hidden: false}
         cook_time_minutes: {hidden: true}
-        prep_time_minutes: {hidden: true}
+        prep_time_minutes: {hidden: false}
       }
     }
   }
