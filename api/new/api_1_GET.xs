@@ -4,7 +4,26 @@ query "API/1" verb=GET {
   input {
     dblink {
       table = "dbtest1"
-      override = {created_at: {hidden: true}}
+      override = {
+        txx       : {hidden: false}
+        text      : {hidden: false}
+        created_at: {hidden: true}
+      }
+    }
+  
+    dblink {
+      table = "recipe"
+      override = {
+        name             : {hidden: false}
+        user             : {hidden: false}
+        image            : {hidden: false}
+        servings         : {hidden: true}
+        created_at       : {hidden: true}
+        description      : {hidden: false}
+        instructions     : {hidden: false}
+        cook_time_minutes: {hidden: true}
+        prep_time_minutes: {hidden: true}
+      }
     }
   }
 
