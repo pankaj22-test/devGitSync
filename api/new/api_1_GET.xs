@@ -3,15 +3,6 @@ query "API/1" verb=GET {
 
   input {
     dblink {
-      table = "dbtest1"
-      override = {
-        txx       : {hidden: false}
-        text      : {hidden: false}
-        created_at: {hidden: true}
-      }
-    }
-  
-    dblink {
       table = "recipe"
       override = {
         name             : {hidden: false}
