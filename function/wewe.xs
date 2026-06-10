@@ -3,7 +3,10 @@ function wewe {
   }
 
   stack {
+    var $x1 {
+      value = $env.$datasource
+    }
   }
 
-  response = null
+  response = $x1
 }
