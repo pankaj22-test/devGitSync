@@ -24,7 +24,7 @@ table post {
     // Reference to the category this post belongs to
     // The category of the post
     int category_id {
-      table = "category"
+      table = "READONLY_FUNCTION_STACK_TEST_DATA_add_more_testing_nname_READONLY_FUNCTION_STACK_TEST_DATA_add_more_testing_nname"
     }
   
     // Whether the post is published and visible to users

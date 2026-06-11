@@ -1,5 +1,5 @@
 // Table to store blog categories
-table category {
+table READONLY_FUNCTION_STACK_TEST_DATA_add_more_testing_nname_READONLY_FUNCTION_STACK_TEST_DATA_add_more_testing_nname {
   auth = false
 
   schema {
