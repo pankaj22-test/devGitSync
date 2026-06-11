@@ -3,7 +3,7 @@ addon category {
   }
 
   stack {
-    db.query READONLY_FUNCTION_STACK_TEST_DATA_add_more_testing_nname_READONLY_FUNCTION_STACK_TEST_DATA_add_more_testing_nname {
+    db.query READONLY_FUNCTION_STACK_TEST {
       return = {type: "list"}
     }
   }
