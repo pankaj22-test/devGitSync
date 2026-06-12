@@ -4,7 +4,7 @@ function test1 {
 
   stack {
     var $x1 {
-      value = 1..10
+      value = "test1"
     }
   }
 
