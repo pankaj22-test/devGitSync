@@ -6,7 +6,7 @@ query "api/1" verb=GET {
 
   stack {
     function.run test1 {
-      input = {Integer: 1..10}
+      input = {Integer: 100}
     } as $func1
   }
 
