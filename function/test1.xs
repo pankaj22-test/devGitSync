@@ -1,7 +1,6 @@
 function test1 {
   input {
     int Integer?
-    int[] int_list?
   }
 
   stack {
@@ -10,5 +9,5 @@ function test1 {
     }
   }
 
-  response = {Integer: $input.Integer, int_list: $input.int_list}
+  response = {Integer: $input.Integer, !int_list: $input.int_list}
 }
