@@ -8,6 +8,6 @@ function test1 {
     }
   }
 
-  response = {Integer: $x1}
+  response = {x1: $x1}
   middleware = {pre: [{name: ""}]}
 }
