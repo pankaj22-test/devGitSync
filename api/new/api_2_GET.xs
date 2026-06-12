@@ -5,7 +5,7 @@ query "API/2" verb=GET {
   }
 
   stack {
-    function.run new {
+    function.run "" {
       runtime_mode = "async-shared"
     } as $func1
   
