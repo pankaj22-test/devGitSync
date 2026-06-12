@@ -1,5 +1,7 @@
 function test1 {
   input {
+    int Integer?
+    int[] int_list?
   }
 
   stack {
