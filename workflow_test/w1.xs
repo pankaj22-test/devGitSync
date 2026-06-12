@@ -6,8 +6,8 @@ workflow_test W1 {
       value = "test"
     }
   
-    api.call "API/2" verb=GET {
-      api_group = "new"
+    api.call "" verb=GET {
+      api_group = ""
       headers = $x1|push:"test"
     } as $endpoint1
   

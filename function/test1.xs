@@ -5,10 +5,10 @@ function test1 {
   }
 
   stack {
-    var $x1 {
+    !var $x1 {
       value = 1..10
     }
   }
 
-  response = $x1
+  response = {Integer: $input.Integer, int_list: $input.int_list}
 }
