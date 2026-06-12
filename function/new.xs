@@ -3,7 +3,7 @@ function new {
   }
 
   stack {
-    db.query dbtest1 {
+    db.query "" {
       return = {type: "list"}
       addon = [{name: "category", as: "_category"}]
     } as $dbtest11

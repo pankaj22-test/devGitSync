@@ -3,7 +3,7 @@ query "API/1" verb=GET {
 
   input {
     dblink {
-      table = "recipe"
+      table = ""
       override = {
         name             : {hidden: false}
         user             : {hidden: false}

@@ -3,7 +3,7 @@ addon dbtest {
   }
 
   stack {
-    db.query dbtest1 {
+    db.query "" {
       return = {type: "list"}
     }
   }

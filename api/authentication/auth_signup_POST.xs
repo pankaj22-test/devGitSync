@@ -9,7 +9,7 @@ query "auth/signup" verb=POST {
   }
 
   stack {
-    db.get user {
+    db.get "" {
       field_name = "email"
       field_value = $input.email
     } as $user
@@ -19,7 +19,7 @@ query "auth/signup" verb=POST {
       error = "This account is already in use."
     }
   
-    db.add user {
+    db.add "" {
       enforce_hidden_fields = false
       data = {
         created_at: "now"
@@ -30,7 +30,7 @@ query "auth/signup" verb=POST {
     } as $user
   
     security.create_auth_token {
-      table = "user"
+      table = ""
       extras = {}
       expiration = 86400
       id = $user.id
