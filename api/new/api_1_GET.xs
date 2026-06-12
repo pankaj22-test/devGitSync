@@ -5,7 +5,10 @@ query "api/1" verb=GET {
   }
 
   stack {
+    var $x1 {
+      value = "test1"
+    }
   }
 
-  response = $func1
+  response = $x1
 }
