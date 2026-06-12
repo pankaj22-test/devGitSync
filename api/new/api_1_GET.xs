@@ -1,5 +1,6 @@
 query "api/1" verb=GET {
   api_group = "new"
+  auth = "new1"
 
   input {
   }
