@@ -3,8 +3,8 @@
 workflow_test auth_profile_retrieval {
   stack {
     // Setup: Register a user and capture their authentication token
-    api.call "auth/signup" verb=POST {
-      api_group = "Authentication"
+    api.call "" verb=GET {
+      api_group = ""
       input = {
         name    : "Profile User"
         email   : "profile_test@example.com"

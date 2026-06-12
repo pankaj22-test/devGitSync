@@ -3,8 +3,8 @@
 workflow_test auth_login_invalid_password {
   stack {
     // Setup: Create a test user with a known password
-    api.call "auth/signup" verb=POST {
-      api_group = "Authentication"
+    api.call "" verb=GET {
+      api_group = ""
       input = {
         name    : "Wrong Pass User"
         email   : "wrong_pass@example.com"

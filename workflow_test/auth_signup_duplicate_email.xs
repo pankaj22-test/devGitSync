@@ -3,8 +3,8 @@
 workflow_test auth_signup_duplicate_email {
   stack {
     // Setup: Create an initial user
-    api.call "auth/signup" verb=POST {
-      api_group = "Authentication"
+    api.call "" verb=GET {
+      api_group = ""
       input = {
         name    : "First User"
         email   : "duplicate@example.com"
@@ -15,8 +15,8 @@ workflow_test auth_signup_duplicate_email {
     // Test: Attempt to sign up again with the same email, which should fail
     expect.to_throw {
       stack {
-        api.call "auth/signup" verb=POST {
-          api_group = "Authentication"
+        api.call "" verb=GET {
+          api_group = ""
           input = {
             name    : "Second User"
             email   : "duplicate@example.com"

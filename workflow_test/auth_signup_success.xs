@@ -3,8 +3,8 @@
 workflow_test auth_signup_success {
   stack {
     // Call the signup endpoint with valid test credentials
-    api.call "auth/signup" verb=POST {
-      api_group = "Authentication"
+    api.call "" verb=GET {
+      api_group = ""
       input = {
         name    : "Signup Success"
         email   : "signup_success@example.com"

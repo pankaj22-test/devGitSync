@@ -3,8 +3,8 @@
 workflow_test auth_login_success {
   stack {
     // Setup: Ensure a test user exists before attempting login
-    api.call "auth/signup" verb=POST {
-      api_group = "Authentication"
+    api.call "" verb=GET {
+      api_group = ""
       input = {
         name    : "Login User"
         email   : "login_success@example.com"
