@@ -1,6 +1,5 @@
 function test1 {
   input {
-    int Integer?
   }
 
   stack {
@@ -10,4 +9,5 @@ function test1 {
   }
 
   response = {Integer: $input.Integer}
+  middleware = {pre: [{name: ""}]}
 }
