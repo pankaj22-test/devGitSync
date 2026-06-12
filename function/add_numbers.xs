@@ -1,7 +1,7 @@
 // Adds two numbers and provides metadata about the result
 // Return the result and some metadata
 // Adds two numbers and performs various assertions
-function "math/add_numbers" {
+function add_numbers {
   input {
     // The first number
     decimal a
