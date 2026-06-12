@@ -1,5 +1,5 @@
 table new1 {
-  auth = false
+  auth = true
 
   schema {
     int id
