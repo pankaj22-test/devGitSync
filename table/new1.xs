@@ -8,6 +8,7 @@ table new1 {
     }
   
     text name? filters=trim
+    int Integer?
   }
 
   index = [
