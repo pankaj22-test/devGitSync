@@ -14,6 +14,7 @@ This guide contains standing instructions for all agents working in this workspa
 
 ## Active Skills
 - **External API Integrator**: Trigger this skill when asked to integrate, connect, or call a third-party service. See `knowledge/skills/external-api-integrator/SKILL.md` for the workflow.
+- **Food Manager**: Trigger this skill when managing food data or creating food-related endpoints. See `knowledge/skills/food-manager/SKILL.md` for the workflow.
 
 ## General Principles
 - Always use `$env` for secrets.
