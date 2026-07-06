@@ -1,5 +1,5 @@
 ---
-name: external-api-integrator
+name: external-api
 description: Help the user integrate third-party APIs (e.g., Stripe, Twilio, SendGrid) by researching, configuring, and scaffolding the request logic.
 scope: workspace
 mode: auto

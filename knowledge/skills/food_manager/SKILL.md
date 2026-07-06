@@ -1,6 +1,6 @@
 ---
 name: food-manager
-description: Instructions for managing food data, including hardcoded lists and potential table migrations.
+description: Instructions food data, including hardcoded lists and potential table migrations.
 scope: workspace
 mode: auto
 knowledge_type: skill
