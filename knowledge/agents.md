@@ -21,6 +21,11 @@ This workspace is dedicated to building and maintaining the **Food Manager** sys
 - **Database Schema Designer**: Trigger this skill when creating or evolving database tables — designing schemas, adding fields, indexes, relationships, or planning migrations. See `knowledge/skills/database-schema-designer/SKILL.md`.
 - **Skill Creator**: Trigger this skill when asked to create a new skill or formalize a workflow. See `knowledge/skills/create-skill/SKILL.md`.
 
+## AI Capabilities
+- **Agent1**: Primary AI agent for task orchestration. See `/ai/agent/agent_1.xs`.
+- **MCP Server**: Provides external tool capabilities via MCP. See `/ai/mcp_server/mcp.xs`.
+- **Tools**: Reusable AI logic. Examples include `tool1` and `tool2` in `/ai/tool/`.
+
 ## Reference Docs
 - **XanoScript & CLI Reference**: Object syntax and confirmed server quirks. See `knowledge/docs/xanoscript-reference.md`. Consult before authoring `.xs` files.
 
@@ -30,5 +35,7 @@ This workspace is dedicated to building and maintaining the **Food Manager** sys
 - **Security**: 
     - Use `$env` for all secrets and API keys.
     - Apply the `api_key_validator` middleware to protected endpoints that do not use standard auth.
-- **Testing**: Every new function must include at least two `test` blocks (one success, one failure/edge case) following the pattern in `function/add_numbers.xs`.
+- **Testing**: 
+    - **Function Tests**: Every new function must include at least two `test` blocks (one success, one failure/edge case) following the pattern in `function/add_numbers.xs`.
+    - **Workflow Tests**: Use workflow tests in `/workflow_test/` for end-to-end API verification. Ensure new authentication logic is covered by tests similar to `auth_signup_success.xs`.
 - **Error Handling**: Include basic error handling for all external requests and database operations.
