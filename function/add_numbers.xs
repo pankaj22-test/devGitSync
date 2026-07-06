@@ -78,7 +78,7 @@ function add_numbers {
     }
   
     expect.to_equal ($response.is_positive) {
-      value = false
+      value = true
     }
   
     expect.to_equal ($response.items) {
