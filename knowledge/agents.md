@@ -1,8 +1,8 @@
 ---
 name: AGENTS.md
-description: This guide contains standing instructions for all agents working in this workspace.
+description: Standing instructions for the Food Manager workspace.
 scope: workspace
-mode: auto
+mode: always
 knowledge_type: agents.md
 enabled: true
 guid: -byb-vyM1nBvzsvnkYroUUFBaLg
@@ -12,15 +12,23 @@ guid: -byb-vyM1nBvzsvnkYroUUFBaLg
 
 This guide contains agents working in this workspace.
 
+## Workspace Focus
+This workspace is dedicated to building and maintaining the **Food Manager** system. It manages food data, user authentication, and utility calculations.
+
 ## Active Skills
-- **External API Integrator**: Trigger this skill when asked to integrate, connect, or call a third-party service. See `knowledge/skills/external-api-integrator/SKILL.md` for the workflow.
-- **Food Manager**: Trigger this skill when managing food data or creating food-related endpoints. See `knowledge/skills/food-manager/SKILL.md` for the workflow.
-- **Database Schema Designer**: Trigger this skill when creating or evolving database tables — designing schemas, adding fields, indexes, relationships, or planning migrations. See `knowledge/skills/database-schema-designer/SKILL.md` for the workflow.
+- **External API Integrator**: Trigger this skill when asked to integrate, connect, or call a third-party service. See `knowledge/skills/external-api/SKILL.md`.
+- **Food Manager**: Trigger this skill when managing food data or creating food-related endpoints. See `knowledge/skills/food-manager/SKILL.md`.
+- **Database Schema Designer**: Trigger this skill when creating or evolving database tables — designing schemas, adding fields, indexes, relationships, or planning migrations. See `knowledge/skills/database-schema-designer/SKILL.md`.
+- **Skill Creator**: Trigger this skill when asked to create a new skill or formalize a workflow. See `knowledge/skills/create-skill/SKILL.md`.
 
 ## Reference Docs
-- **XanoScript & CLI Reference**: Object syntax, the rules the parser enforces, confirmed server quirks (int-default-0, CS-1580, version skew), and the CLI push/pull loop. See `knowledge/docs/xanoscript-reference.md`. Consult before authoring `.xs` files or debugging a push failure.
+- **XanoScript & CLI Reference**: Object syntax and confirmed server quirks. See `knowledge/docs/xanoscript-reference.md`. Consult before authoring `.xs` files.
 
 ## General Principles
-- Always use `$env` for secrets.
-- Prefix integration functions with the service name (e.g., `stripe/create_customer`).
-- Include basic error handling for all external requests.
+- **Data Model**: Use the `new1` table for user-related authentication and profiles.
+- **Naming**: Food-related logic should live in the `food` API group or be prefixed with `food/` in functions.
+- **Security**: 
+    - Use `$env` for all secrets and API keys.
+    - Apply the `api_key_validator` middleware to protected endpoints that do not use standard auth.
+- **Testing**: Every new function must include at least two `test` blocks (one success, one failure/edge case) following the pattern in `function/add_numbers.xs`.
+- **Error Handling**: Include basic error handling for all external requests and database operations.
