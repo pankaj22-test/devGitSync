@@ -6,4 +6,6 @@ workspace work11 {
     sql_names        : false
     sql_columns      : true
   }
+
+  realtime = {canonical: "xShbmwa88FjDarl-wt1xROSYPJo"}
 }
