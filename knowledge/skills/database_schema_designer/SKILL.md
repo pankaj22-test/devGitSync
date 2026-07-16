@@ -62,7 +62,13 @@ table food {
   (e.g. `int user_id` on `run_log`).
 - Add a `btree` index on the FK column for query performance.
 
-### 6. Migrate safely
+### 6. Subskills & Patterns
+- Consult reference files in the `references/` folder for specialized patterns.
+- **Soft Deletes**: Use `deleted_at` timestamp instead of hard deletes.
+- **Auditing**: Include `created_by`, `updated_at`, etc.
+- See `references/newskillreference_inherits.md` for implementation details.
+
+### 7. Migrate safely
 - Validate the `.xs` with the XanoScript validator before pushing.
 - Push, then **pull into a scratch dir and re-read** to confirm the change landed.
 - Numeric inputs on endpoints default to `0` — for patch semantics use `int? x?=null`
