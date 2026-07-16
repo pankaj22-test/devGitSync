@@ -2,7 +2,7 @@
 name: create-skill
 description: Author, test, and save new skills to formalize recurring workflows or specialized expertise.
 scope: workspace
-mode: auto
+mode: referenced
 knowledge_type: skill
 enabled: true
 guid: wcbA6uSQngjfijgFtB6axqqhBdU
