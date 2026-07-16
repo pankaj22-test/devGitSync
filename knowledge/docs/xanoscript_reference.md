@@ -14,7 +14,7 @@ Reference material the workspace skills lean on. Grounded in real pushes against
 stage/dev instances — trust this over the published docs page when they conflict.
 Always run the XanoScript validator before pushing.
  trust this over the published docs page when they conflict.
-Always run the XanoScript validator before pushings.
+Always run the XanoScript validator before pushing.
 
 
 ## Object syntax at a glance
