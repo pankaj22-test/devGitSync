@@ -5,7 +5,7 @@ query "api/2" verb=GET {
   }
 
   stack {
-    function.run test1 as $func1
+    function.run "" as $func1
   }
 
   response = $func1
