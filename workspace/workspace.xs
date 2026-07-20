@@ -1,5 +1,5 @@
 workspace work11 {
-  acceptance = {ai_terms: true}
+  acceptance = {ai_terms: false}
   preferences = {
     internal_docs    : false
     track_performance: true
