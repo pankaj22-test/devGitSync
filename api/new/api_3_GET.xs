@@ -6,7 +6,7 @@ query "api/3" verb=GET {
 
   stack {
     db.truncate name1 {
-      reset = true
+      reset = false
     }
   }
 
