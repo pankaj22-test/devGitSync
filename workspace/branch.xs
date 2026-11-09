@@ -6,6 +6,7 @@ branch v1 {
     query   : {pre: [], post: []}
     task    : {pre: [], post: []}
     tool    : {pre: [], post: []}
+    message : {pre: [], post: []}
   }
 
   history = {
